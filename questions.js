@@ -1,8 +1,8 @@
 module.exports = [
   {
-    type: 'input',
+    type: 'path',
     name: 'path',
-    default: __dirname + '/repos',
+    default: process.cwd(),
     message: 'Absolute path to folder with repos inside'
   },
   {
@@ -12,9 +12,9 @@ module.exports = [
     message: 'Do you want to include files to every repo?'
   },
   {
-    type: 'input',
+    type: 'path',
     name: 'includeFilesPath',
-    default: __dirname + '/files',
+    default: process.cwd(),
     message: 'Path to folder with files to include in every repo',
     when: (answers) => answers.includeFiles === true
   },
@@ -27,7 +27,7 @@ module.exports = [
   {
     type: 'input',
     name: 'repoNamePattern',
-    default: 'coderoadpl/{{mainDir}}--{{dir}}',
+    default: '{{mainDir}}--{{dir}}',
     message: 'Pattern to create repo name. You can use {{mainDir}} and {{dir}} variables.'
   }
 ]

@@ -16,6 +16,7 @@
     "directory-tree": "^2.2.4",
     "fs-extra": "^8.1.0",
     "inquirer": "^7.0.4",
+    "inquirer-path": "^1.0.0-beta5",
     "node-dir": "^0.1.17",
     "node-exec-promise": "^1.0.2"
   },
