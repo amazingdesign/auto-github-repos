@@ -1,20 +1,20 @@
-# auto-github-repos
+# auto-github-repo
 
 Small script to batch create and push Github repositories from all directories in selected folder!
 
 ## Usage
 
 ```
-npx auto-github-repos
+npx auto-github-repo
 ```
 
 or 
 
 
 ```
-npm install -g auto-github-repos
+npm install -g auto-github-repo
 
-auto-github-repos
+auto-github-repo
 ```
 
 ## Posibilities
