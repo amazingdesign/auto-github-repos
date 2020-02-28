@@ -21,6 +21,9 @@ module.exports = (answers) => {
         // prevent to fail when "nothing to commit"          
       })
       .then(() => exec(`cd ${path} && git remote remove origin`))
+      .catch(() => {
+        // prevent to fail when "No such remote: 'origin'"          
+      })
       .then(() => console.log('Creating repo: ' + githubName))
       .then(() => exec(`cd ${path} && hub create ${githubName}`))
       .then(() => console.log('Created repo: ' + githubName))
