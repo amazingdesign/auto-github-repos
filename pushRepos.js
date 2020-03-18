@@ -27,7 +27,7 @@ module.exports = (answers) => {
       .then(() => console.log('Creating repo: ' + githubName))
       .then(() => exec(`cd ${path} && hub create ${githubName}`))
       .then(() => console.log('Created repo: ' + githubName))
-      .then(() => exec(`cd ${path} && git push -u origin master`))
+      .then(() => exec(`cd ${path} && git push -u --all origin`))
       .then(() => console.log('Pushed to repo: ' + githubName))
   })
 
